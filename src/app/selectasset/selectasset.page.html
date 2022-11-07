@@ -1,0 +1,28 @@
+<ion-header>
+  <ion-toolbar color="medium">
+    <ion-title>
+      <ion-icon name="add-circle-sharp"></ion-icon>
+    Add Asset </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+
+<ion-content>
+  <ion-list>
+    <ion-item>
+      <ion-select
+        [compareWith]="compareWith"
+        placeholder="Select Asset"
+        (ionChange)="handleChange($event)"
+        [multiple]="true"
+      >
+        <ion-select-option *ngFor="let asset of assets" [value]="asset">{{ asset.name }}</ion-select-option>
+      </ion-select>
+    </ion-item>
+    <ion-item lines="none">
+      <ion-label>Chosen Asset: {{ chosenAsset| json}}</ion-label>
+    </ion-item>
+  </ion-list>
+  <ion-button routerLink="/tabs/tab1">Go To Asset</ion-button>
+
+</ion-content>

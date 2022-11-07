@@ -1,7 +1,12 @@
 <ion-header [translucent]="true">
-  <ion-toolbar>
+  <ion-toolbar color="medium">
     <ion-title>
-      Tab 1
+      <ion-chip color="dark">
+        <ion-avatar>
+          <img src="https://ionicframework.com/docs/img/demos/avatar.svg" />
+        </ion-avatar>
+        <ion-label>LAND EV</ion-label>
+      </ion-chip>
     </ion-title>
   </ion-toolbar>
 </ion-header>
@@ -9,9 +14,82 @@
 <ion-content [fullscreen]="true">
   <ion-header collapse="condense">
     <ion-toolbar>
-      <ion-title size="large">Tab 1</ion-title>
+      <ion-title size="large">LAND EV</ion-title>
     </ion-toolbar>
   </ion-header>
+  <ion-grid>
+    <ion-row>
+      <ion-col>
+        <ion-card color="warning">
+          <ion-card-header>
+            <ion-card-title >Odometer</ion-card-title>
+            <ion-card-subtitle>6878 KM</ion-card-subtitle>
+          </ion-card-header>
 
-  <app-explore-container name="Tab 1 page"></app-explore-container>
+          <ion-button  routerLink="/selectasset" >Know More</ion-button>
+        </ion-card>
+      </ion-col>
+      <ion-col>
+        <ion-card color="warning">
+          <ion-card-header>
+            <ion-card-title >RPM</ion-card-title>
+            <ion-card-subtitle>720 KM</ion-card-subtitle>
+          </ion-card-header>
+
+          <ion-button >Know More</ion-button>
+        </ion-card>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col>
+        <ion-card color="warning">
+          <ion-card-header>
+            <ion-card-title >Battery Temperature</ion-card-title>
+            <ion-card-subtitle>25 C</ion-card-subtitle>
+          </ion-card-header>
+
+          <ion-button >Know More</ion-button>
+        </ion-card>
+      </ion-col>
+      <ion-col>
+        <ion-card color="warning">
+          <ion-card-header>
+            <ion-card-title >Motor Temperature</ion-card-title>
+            <ion-card-subtitle>6878 KM</ion-card-subtitle>
+          </ion-card-header>
+
+          <ion-button >Know More</ion-button>
+        </ion-card>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col>
+        <ion-card color="warning">
+          <ion-card-header>
+            <ion-card-title >Power</ion-card-title>
+            <ion-card-subtitle>437 W</ion-card-subtitle>
+          </ion-card-header>
+          <ion-card-content>Min: 200W</ion-card-content>
+          <ion-card-content>Max: 15000W</ion-card-content>
+
+          <ion-button >Know More</ion-button>
+        </ion-card>
+      </ion-col>
+      <ion-col>
+        <ion-card color="warning">
+          <ion-card-header>
+            <ion-card-title >Speed </ion-card-title>
+            <ion-card-subtitle>5 MPH</ion-card-subtitle>
+          </ion-card-header>
+          <ion-card-content>Min: 0 MPH</ion-card-content>
+          <ion-card-content>Max: 100 MPH</ion-card-content>
+
+          <ion-button >Know More</ion-button>
+        </ion-card>
+      </ion-col>
+    </ion-row>
+
+  </ion-grid>
+
+  <!-- <app-explore-container name="Tab 1 page"></app-explore-container> -->
 </ion-content>

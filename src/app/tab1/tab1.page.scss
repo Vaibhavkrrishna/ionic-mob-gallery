@@ -1,15 +1,37 @@
 .header{
-  background-color: #D3D3D3;
+  background-color: #ba2828;
 }
 
 ion-card-header.ios {
   display: flex;
   flex-flow: column-reverse;
 }
+.right-align{
+  margin-left: 250px !important ;
+  color: #000000;
+  font-size: larger ;
+
+}
+.ey-logo{
+
+  color: #000000;
+  font-size: larger ;
+
+}
 
 ion-col {
- 
+
   border: solid 5px #fff;
-  
+
   text-align: center;
 }
+ion-avatar{
+  position: absolute;
+  top: 0px;
+  left: 0px;
+}
+
+ion-label{
+  margin-left: 0%;
+}
+

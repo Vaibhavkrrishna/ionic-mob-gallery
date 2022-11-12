@@ -8,11 +8,11 @@ export class AssetServiceService {
 
   constructor(private http: HttpClient ) { }
 }
- getTop(){
+ //getTop(){
 
 
- }
+// }
 
- getDetails(){
-  
- }
+ //getDetails(){
+
+ //}

@@ -1,4 +1,4 @@
-<ion-header [translucent]="true">
+ <!-- <ion-header [translucent]="true">
   <ion-toolbar color="medium" >
     <ion-title>
      Remote Operations Cockpit
@@ -7,7 +7,7 @@
 </ion-header>
 
 <ion-content [fullscreen]="true">
-  <!-- <ion-list>
+   <ion-list>
     <ion-item color="dark">
       <ion-label>Total Vechicles Online &nbsp;&nbsp;
         <ion-button>1</ion-button>
@@ -38,7 +38,75 @@
     <ion-item color="dark">
       <ion-label>Avg Availability</ion-label>
     </ion-item>
-  </ion-list> -->
+  </ion-list>
+
+
+
+</ion-content> -->
+<!--
+
+<ion-header>
+  <ion-toolbar>
+    <ion-title>NGX Data Table</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="ion-padding">
+  Theme classes dark, material, bootstrap
+    <ngx-datatable
+      class="material"
+      [limit]="8"
+      [rows]="rows"
+      [rowHeight]="50"
+      [columns]="columns"
+      [columnMode]="'force'"
+      [sortType]="'multi'"
+      [headerHeight]="50"
+      [footerHeight]="50">
+    </ngx-datatable>
+    <ngx-datatable #myTable [rows]="rows" [columns]="columns">
+  </div>
+</ion-content> -->
+
+<ion-header [translucent]="true">
+  <ion-toolbar color="medium" >
+    <ion-title class="main" >
+     Remote Operations Cockpit
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+
+<ion-content   color="medium" [fullscreen]="true">
+  <ion-title class="main" >Service Tickets</ion-title>
+  <ion-grid class="table">
+
+    <ion-row class="heading" >
+      <!-- <ion-col>S.No</ion-col> -->
+      <ion-col>Alert ID</ion-col>
+      <ion-col>Ticket ID</ion-col>
+      <ion-col>Description</ion-col>
+    </ion-row>
+
+    <ion-row class="light-grey" *ngFor="let ticket of tickets; index as i">
+      <!-- <ion-col>{{ i + 1 }}</ion-col> -->
+      <ion-col >{{ ticket.alertid}}</ion-col>
+      <ion-col class="ticket" >{{ ticket.ticketid }}</ion-col>
+      <ion-col>{{ ticket.description }}</ion-col>
+    </ion-row>
+
+  </ion-grid>
+<!--
+  <div class="chart-container">
+    <canvas  id="MyChart" >{{ chart }}</canvas>
+  </div> -->
+
+  <!-- <ion-item lines="none">
+    <ion-button color="primary" size="small" slot="end" routerLink="/material">
+      Material Design Table
+    </ion-button>
+  </ion-item> -->
 
 
 </ion-content>

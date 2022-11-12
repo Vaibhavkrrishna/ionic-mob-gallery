@@ -1,4 +1,4 @@
-.header{
+.header {
   background-color: #ba2828;
 }
 
@@ -6,32 +6,48 @@ ion-card-header.ios {
   display: flex;
   flex-flow: column-reverse;
 }
-.right-align{
-  margin-left: 250px !important ;
+.right-align {
   color: #000000;
-  font-size: larger ;
-
+  font-size: larger;
+  display: flex;
+  justify-content: right;
 }
-.ey-logo{
+.flex-container {
+  display: flex;
+  width: 100%;
+}
+.child{
+  display: inline-block;
+}
+.main{
+  text-align: center;
+  font-size: x-large;
+  font-weight: bolder;
+  margin-top: 20px;
+  color: white;
+}
 
+.ey-logo {
   color: #000000;
-  font-size: larger ;
-
+  font-size: larger;
 }
 
 ion-col {
-
   border: solid 5px #fff;
 
   text-align: center;
 }
-ion-avatar{
+ion-avatar {
   position: absolute;
   top: 0px;
   left: 0px;
 }
 
-ion-label{
+ion-label {
   margin-left: 0%;
 }
+.grey-background{
+  background-color: grey;
+}
+
 

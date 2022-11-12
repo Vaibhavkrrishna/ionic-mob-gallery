@@ -1,23 +1,32 @@
 <ion-header [translucent]="true">
   <ion-toolbar color="medium" >
-    <ion-title>
+    <ion-title class="strong-title" >
       Prediction with Advanced Analytics
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true">
+<ion-content color="medium" [fullscreen]="true">
   <div class="ion-padding">
-    <ion-card>
+    <!-- <ion-card>
       <ion-card-header> Bar Chart </ion-card-header>
       <ion-card-content>
-        <canvas #barCanvas></canvas>
+        <div class="chart-container">
+           <canvas  id="MyChart" >{{ chart }}</canvas>
+        </div>
+
+      </ion-card-content>
+    </ion-card>-->
+    <ion-card color="dark" >
+      <ion-card-header class="strong" > Count of Problem Cause </ion-card-header>
+      <ion-card-content>
+        <canvas  id="MyChart" >{{ chart }}</canvas>
       </ion-card-content>
     </ion-card>
-    <ion-card>
-      <ion-card-header> Doughnut Chart </ion-card-header>
+    <ion-card color="dark" >
+      <ion-card-header class="strong"> Probablitiy of Problem Cause </ion-card-header>
       <ion-card-content>
-        <canvas #doughnutCanvas></canvas>
+        <canvas  id="Pie" >{{ pie }}</canvas>
       </ion-card-content>
     </ion-card>
     <!-- <ion-card>

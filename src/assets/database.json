@@ -1,0 +1,52 @@
+[
+  {
+      "alertid": "1",
+      "ticketid": "SRVPR_0012_1",
+      "description": "Front Fork Failure"
+  },
+  {
+      "alertid": "2",
+      "ticketid": "SRVPR_0012_2",
+      "description": "Front Fork Failure"
+  },
+  {
+      "alertid": "3",
+      "ticketid": "SRVPR_0016_3",
+      "description": "Suspension Failure"
+  },
+  {
+      "alertid": "4",
+      "ticketid": "SRVPR_0016_4",
+      "description": "Front Fork Failure"
+  },
+  {
+      "alertid": "4",
+      "ticketid": "SRVPR_0016_5",
+      "description": "Suspension Failure"
+  },
+  {
+      "alertid": "5",
+      "ticketid": "SRVPR_0019_5",
+      "description": "Front Fork Failure"
+  },
+  {
+      "alertid": "6",
+      "ticketid": "SRVPR_0016_6",
+      "description": "Tire Failure "
+  },
+  {
+      "alertid": "7",
+      "ticketid": "SRVPR_0014_7",
+      "description": "Battery Capacity Degradation"
+  },
+  {
+      "alertid": "8",
+      "ticketid": "SRVPR_0021_8",
+      "description": "Front Fork Failure"
+  },
+  {
+      "alertid": "9",
+      "ticketid": "SRVPR_0019_9",
+      "description": "Battery Capacity Degradation"
+  }
+]

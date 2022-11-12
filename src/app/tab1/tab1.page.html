@@ -1,72 +1,69 @@
+
 <ion-header [translucent]="true">
   <ion-toolbar color="medium">
     <ion-title>
 
-      <ion-label  class='ey-logo' size="large"   >EY</ion-label>
-      <!-- <ion-chip color="dark" class='right-align'>
 
-       <ion-avatar class="right-align" >
-          <img src="https://ionicframework.com/docs/img/demos/avatar.svg" />
-        </ion-avatar>
-        <ion-content size="large"  >LAND EV</ion-content>
-
-      </ion-chip> -->
-      <ion-label  class="right-align" size="large"   >LAND EV</ion-label>
-
-
-
+      <div class="flex-container" >
+        <div class="flex-container" ><ion-label class="ey-logo" size="large"><img [src] ="imagePath"
+          style="width: 60px;height: 40px;"></ion-label></div>
+        <div>
+          <ion-label style="margin-top:8px ;"   class=" right-align main" size="large"><img [src] ="landImage"
+            style="width: 60px;height: 40px;"></ion-label>
+        </div>
+      </div>
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true">
+<ion-content class='grey-background'  [fullscreen]="true">
   <ion-header collapse="condense">
     <ion-toolbar>
       <ion-title size="large">LAND EV</ion-title>
     </ion-toolbar>
   </ion-header>
-  <ion-grid>
+  <ion-grid >
     <ion-row>
       <ion-col>
-        <ion-card color="medium">
+        <ion-card color="dark">
           <ion-card-header>
-            <ion-card-title >Odometer</ion-card-title>
+            <ion-card-title>Odometer</ion-card-title>
             <ion-card-subtitle>6878 KM</ion-card-subtitle>
           </ion-card-header>
 
-          <ion-button  routerLink="/selectasset" >Know More</ion-button>
+          <ion-button routerLink="/selectasset">Know More</ion-button>
         </ion-card>
       </ion-col>
       <ion-col>
-        <ion-card color="medium">
+        <ion-card color="dark">
           <ion-card-header>
-            <ion-card-title >RPM</ion-card-title>
+            <ion-card-title>RPM</ion-card-title>
             <ion-card-subtitle>720 KM</ion-card-subtitle>
           </ion-card-header>
 
-          <ion-button >Know More</ion-button>
+          <ion-button>Know More</ion-button>
         </ion-card>
       </ion-col>
     </ion-row>
     <ion-row>
       <ion-col>
-        <ion-card color="medium">
+        <ion-card color="dark">
           <ion-card-header>
-            <ion-card-title >Battery Temperature</ion-card-title>
+            <ion-card-title>Battery Temperature</ion-card-title>
             <ion-card-subtitle>25 C</ion-card-subtitle>
           </ion-card-header>
 
-          <ion-button >Know More</ion-button>
+          <ion-button>Know More</ion-button>
         </ion-card>
       </ion-col>
       <ion-col>
-        <ion-card color="medium">
+        <ion-card color="dark">
           <ion-card-header>
-            <ion-card-title >Motor Temperature</ion-card-title>
+            <ion-card-title>Motor Temperature</ion-card-title>
             <ion-card-subtitle>6878 KM</ion-card-subtitle>
           </ion-card-header>
 
-          <ion-button >Know More</ion-button>
+          <ion-button>Know More</ion-button>
         </ion-card>
       </ion-col>
     </ion-row>
@@ -96,8 +93,10 @@
         </ion-card>
       </ion-col>
     </ion-row> -->
-
   </ion-grid>
+
+
 
   <!-- <app-explore-container name="Tab 1 page"></app-explore-container> -->
 </ion-content>
+

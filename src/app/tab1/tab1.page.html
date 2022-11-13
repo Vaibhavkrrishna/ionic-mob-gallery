@@ -1,14 +1,14 @@
 
-<ion-header [translucent]="true">
-  <ion-toolbar color="medium">
-    <ion-title>
+<ion-header  [translucent]="true">
+  <ion-toolbar color="dark" >
+    <ion-title >
 
 
       <div class="flex-container" >
-        <div class="flex-container" ><ion-label class="ey-logo" size="large"><img [src] ="imagePath"
+        <div class="flex-container" ><ion-label class="" size="large"><img [src] ="imagePath"
           style="width: 60px;height: 40px;"></ion-label></div>
         <div>
-          <ion-label style="margin-top:8px ;"   class=" right-align main" size="large"><img [src] ="landImage"
+            <ion-label style="margin-top:8px ;"   class=" right-align" size="large"><img [src] ="landImage"
             style="width: 60px;height: 40px;"></ion-label>
         </div>
       </div>
@@ -16,16 +16,18 @@
   </ion-toolbar>
 </ion-header>
 
-<ion-content class='grey-background'  [fullscreen]="true">
-  <ion-header collapse="condense">
+<ion-content   color="dark"  >
+  <!-- <ion-header collapse="condense">
     <ion-toolbar>
       <ion-title size="large">LAND EV</ion-title>
     </ion-toolbar>
-  </ion-header>
-  <ion-grid >
+  </ion-header> -->
+
+
+  <!-- <ion-grid >
     <ion-row>
-      <ion-col>
-        <ion-card color="dark">
+      <ion-col  class="" >
+        <ion-card color="" >
           <ion-card-header>
             <ion-card-title>Odometer</ion-card-title>
             <ion-card-subtitle>6878 KM</ion-card-subtitle>
@@ -93,10 +95,72 @@
         </ion-card>
       </ion-col>
     </ion-row> -->
-  </ion-grid>
+  <!--</ion-grid> -->
+<div  class="box">
+  <div class="flex-parent box " style="margin-top:15px;" >
+<div class="flex-child"   >
+  <h1>Odometer</h1>
+  <h2>6878 KM</h2>
+  <div style="display:flex; justify-content:space-around " >
+  <h5>Max:</h5>
+  <h5>Min:</h5>
+</div>
+  <!-- <ion-button routerLink="/selectasset">Know More</ion-button> -->
+  <ion-button style="margin-bottom: 2%;" >Know More</ion-button>
+
+
+
+</div>
+<div class="flex-child" >
+
+  <h1>RPM</h1>
+  <h2> 720 KM </h2>
+  <div style="display:flex; justify-content:space-around " >
+  <h5>Max:</h5>
+  <h5>Min:</h5>
+</div>
+  <ion-button routerLink="/selectasset">Know More</ion-button>
+
+
+
+
+</div>
+
+  </div>
+  <div class="flex-parent box" >
+    <div class="flex-child"   >
+      <h1>Battery Temperature</h1>
+      <h2> 25 <sup>o</sup>    C </h2>
+      <div style="display:flex; justify-content:space-around " >
+      <h5>Max:</h5>
+      <h5>Min:</h5>
+    </div>
+      <!-- <ion-button routerLink="/selectasset">Know More</ion-button> -->
+      <ion-button >Know More</ion-button>
+
+
+    </div>
+    <div class="flex-child" >
+
+      <h1>Motor Temperature</h1>
+      <h2> 49 <sup>o</sup>    C </h2>
+      <div style="display:flex; justify-content:space-around " >
+      <h5>Max:</h5>
+      <h5>Min:</h5>
+    </div>
+      <ion-button routerLink="/selectasset">Know More</ion-button>
+
+
+
+
+    </div>
+
+      </div>
+    </div>
 
 
 
   <!-- <app-explore-container name="Tab 1 page"></app-explore-container> -->
 </ion-content>
+
 

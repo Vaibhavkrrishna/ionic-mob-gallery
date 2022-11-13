@@ -10,6 +10,10 @@ const routes: Routes = [
   {
     path: 'selectasset',
     loadChildren: () => import('./selectasset/selectasset.module').then( m => m.SelectassetPageModule)
+  },
+  {
+    path: 'material',
+    loadChildren: () => import('./material/material.module').then( m => m.MaterialPageModule)
   }
 ];
 @NgModule({

@@ -1,34 +1,51 @@
 <ion-header [translucent]="true">
-  <ion-toolbar color="medium" >
+  <ion-toolbar color="dark" >
     <ion-title class="strong-title" >
-      Prediction with Advanced Analytics
+      <div class="flex-container" >
+        <div class="flex-container" ><ion-label class="" size="large"><img [src] ="imagePath"
+          style="width: 60px;height: 40px;"></ion-label></div>
+        <div>
+            <ion-label style="margin-top:8px ;"   class=" right-align" size="large"><img [src] ="landImage"
+            style="width: 60px;height: 40px;"></ion-label>
+        </div>
+      </div>
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content color="medium" [fullscreen]="true">
-  <div class="ion-padding">
-    <!-- <ion-card>
-      <ion-card-header> Bar Chart </ion-card-header>
-      <ion-card-content>
-        <div class="chart-container">
-           <canvas  id="MyChart" >{{ chart }}</canvas>
-        </div>
+<ion-content color="dark" [fullscreen]="true">
+  <p class="header" >Prediction With Advanced Analytics</p>
+  <div class="box" style="margin-top: 0;" >
 
-      </ion-card-content>
-    </ion-card>-->
-    <ion-card color="dark" >
-      <ion-card-header class="strong" > Count of Problem Cause </ion-card-header>
-      <ion-card-content>
-        <canvas  id="MyChart" >{{ chart }}</canvas>
-      </ion-card-content>
-    </ion-card>
-    <ion-card color="dark" >
+    <div class="box"  >
+      <ion-card   style="background-color:rgb(59, 56, 56) ;margin-bottom: 5px;">
+        <ion-card-header class="strong"style="color: white;"> Probablitiy of Problem Cause </ion-card-header>
+        <ion-card-content>
+          <canvas  id="Pie"  >{{ pie }}</canvas>
+        </ion-card-content>
+      </ion-card>
+      <ion-card  style="background-color: rgb(59, 56, 56);" >
+        <ion-card-header class="strong" style="color: white;"> Count of Problem Cause </ion-card-header>
+        <ion-card-content>
+          <canvas  id="MyChart" >{{ chart }}</canvas>
+        </ion-card-content>
+      </ion-card>
+
+    <!-- <ion-card   style="background-color:rgb(59, 56, 56) ;margin-bottom: 5px;">
       <ion-card-header class="strong"> Probablitiy of Problem Cause </ion-card-header>
       <ion-card-content>
         <canvas  id="Pie" >{{ pie }}</canvas>
       </ion-card-content>
-    </ion-card>
+    </ion-card> -->
+    </div>
+    <!-- <div class="">
+      <ion-card  style="background-color: rgb(59, 56, 56);" >
+        <ion-card-header class="strong" > Count of Problem Cause </ion-card-header>
+        <ion-card-content>
+          <canvas  id="MyChart" >{{ chart }}</canvas>
+        </ion-card-content>
+      </ion-card>
+  </div> -->
     <!-- <ion-card>
       <ion-card-header> Line Chart </ion-card-header>
       <ion-card-content>

@@ -6,6 +6,9 @@ ion-card-header.ios {
   display: flex;
   flex-flow: column-reverse;
 }
+ion-header {
+  background-color: #000000;
+}
 .right-align {
   color: #000000;
   font-size: larger;
@@ -16,6 +19,22 @@ ion-card-header.ios {
   display: flex;
   width: 100%;
 }
+.flex-parent{
+  display: flex;
+}
+.flex-child{
+  flex: 1;
+  background-color: rgb(59, 56, 56);
+  margin: 5% 2% 3% 2%;
+  height: 70%;
+  text-align: center;
+  
+}
+.box {
+  height:70% !important ;
+  margin: 0px !important;
+}
+
 .child{
   display: inline-block;
 }
@@ -27,16 +46,21 @@ ion-card-header.ios {
   color: white;
 }
 
-.ey-logo {
-  color: #000000;
-  font-size: larger;
+.black{
+  background-color: #000000;
 }
+
+// .ey-logo {
+//   color: #000000;
+//   font-size: larger;
+// }
 
 ion-col {
   border: solid 5px #fff;
-
+  background-color: grey !important;
   text-align: center;
 }
+
 ion-avatar {
   position: absolute;
   top: 0px;

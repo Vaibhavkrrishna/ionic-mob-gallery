@@ -8,9 +8,10 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { NgxDatatableModule } from '@swimlane/ngx-datatable';
 import { BarChartComponent } from './bar-chart/bar-chart.component';
+
 @NgModule({
   declarations: [AppComponent,BarChartComponent],
-  imports: [BrowserModule, IonicModule.forRoot(), AppRoutingModule,NgxDatatableModule,HttpClientModule, ],
+  imports: [BrowserModule, IonicModule.forRoot(), AppRoutingModule,NgxDatatableModule,HttpClientModule ],
   providers: [{ provide: RouteReuseStrategy, useClass: IonicRouteStrategy }],
   bootstrap: [AppComponent],
   schemas: [ CUSTOM_ELEMENTS_SCHEMA ]

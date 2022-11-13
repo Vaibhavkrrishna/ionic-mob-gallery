@@ -2,51 +2,68 @@
   {
       "alertid": "1",
       "ticketid": "SRVPR_0012_1",
-      "description": "Front Fork Failure"
+      "description": "Front Fork Failure",
+      "status": "Open"
   },
   {
       "alertid": "2",
       "ticketid": "SRVPR_0012_2",
-      "description": "Front Fork Failure"
+      "description": "Front Fork Failure",
+      "status": "Scheduled"
   },
   {
       "alertid": "3",
       "ticketid": "SRVPR_0016_3",
-      "description": "Suspension Failure"
+      "description": "Suspension Failure",
+      "status": "Open"
   },
   {
       "alertid": "4",
       "ticketid": "SRVPR_0016_4",
-      "description": "Front Fork Failure"
+      "description": "Front Fork Failure",
+      "status": "Active"
   },
   {
       "alertid": "4",
       "ticketid": "SRVPR_0016_5",
-      "description": "Suspension Failure"
+      "description": "Suspension Failure",
+      "status": "Scheduled"
   },
   {
       "alertid": "5",
       "ticketid": "SRVPR_0019_5",
-      "description": "Front Fork Failure"
+      "description": "Front Fork Failure",
+      "status": "Open"
   },
   {
       "alertid": "6",
       "ticketid": "SRVPR_0016_6",
-      "description": "Tire Failure "
+      "description": "Tire Failure ",
+      "status": "In Progress"
   },
   {
       "alertid": "7",
       "ticketid": "SRVPR_0014_7",
-      "description": "Battery Capacity Degradation"
+      "description": "Battery Capacity Degradation",
+      "status": "Open"
   },
   {
       "alertid": "8",
       "ticketid": "SRVPR_0021_8",
-      "description": "Front Fork Failure"
+      "description": "Front Fork Failure",
+      "status": "In Progress"
   },
   {
       "alertid": "9",
       "ticketid": "SRVPR_0019_9",
-      "description": "Battery Capacity Degradation"
+      "description": "Battery Capacity Degradation",
+      "status": "Open"
+  },
+  {
+      "alertid": "10",
+      "ticketid": "SRVPR_0019_10",
+      "description": "Battery Capacity Degradation",
+      "status": "Closed"
   }
+
 ]

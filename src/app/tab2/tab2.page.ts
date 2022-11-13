@@ -1,6 +1,7 @@
 import { Component,OnInit } from '@angular/core';
 import { PhotoService } from '../services/photo.service';
 import Chart from 'chart.js/auto';
+Chart.defaults.color = 'white';
 
 @Component({
   selector: 'app-tab2',
@@ -10,8 +11,12 @@ import Chart from 'chart.js/auto';
 export class Tab2Page implements OnInit{
   public chart: any;
   public pie: any;
+  imagePath: string;
+  landImage: string;
 
   constructor() {
+    this.imagePath = './assets/icon/ey-white-logo.png';
+    this.landImage='./assets/icon/ev_bike.png';
   }
 
   ngOnInit(): void {
@@ -19,6 +24,7 @@ export class Tab2Page implements OnInit{
     this.createPie();
   }
   createChart(){
+
 
     this.chart = new Chart('MyChart', {
       type:'bar'  , //this denotes tha type of chart
@@ -29,7 +35,8 @@ export class Tab2Page implements OnInit{
           {
             label:'Count of Problem Cause',
             data: ['4200','2000', '2800','3000' ],
-            backgroundColor: ['#0074D9']
+            backgroundColor: ['#0074D9'],
+
            // backgroundColor: 'black'
           },
           // {
@@ -41,8 +48,9 @@ export class Tab2Page implements OnInit{
         ]
       },
       options: {
-        aspectRatio:1,
+        aspectRatio:1.5 ,
         responsive: true,
+
       }
     });
   }
@@ -69,7 +77,7 @@ export class Tab2Page implements OnInit{
         ]
       },
       options: {
-        aspectRatio:1
+        aspectRatio:1.25
       }
     });
   }

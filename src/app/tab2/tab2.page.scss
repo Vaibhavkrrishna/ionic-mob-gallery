@@ -1,5 +1,5 @@
 .strong{
-  font-size: x-large;
+  font-size: large;
   text-align: center;
 }
 .strong-title{
@@ -7,6 +7,33 @@
   text-align: center;
   font-size: large;
   font-weight: bolder;
-  margin-top: 20px;
+  //margin-top: 20px;
+
+}
+.box-m{
+  height: 100%;
+  margin:0% ;
+}
+.box{
+  height: 100%;
+  color: white !important;
+
+}
+.flex-container {
+  display: flex;
+  width: 100%;
+}
+.right-align {
+  color: #000000;
+  font-size: larger;
+  display: flex;
+  justify-content: right;
+}
+.header{
+  background-color: #ffff00 ;
+  color:black;
+  font-weight: bold;
+  text-align: center;
+
 
 }

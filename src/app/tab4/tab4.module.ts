@@ -4,7 +4,7 @@ import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { Tab4Page } from './tab4.page';
 import { ExploreContainerComponentModule } from '../explore-container/explore-container.module';
-
+import { MaterialModule } from '../material.module';
 import { Tab4PageRoutingModule } from './tab4-routing.module';
 
 @NgModule({
@@ -13,7 +13,8 @@ import { Tab4PageRoutingModule } from './tab4-routing.module';
     CommonModule,
     FormsModule,
     ExploreContainerComponentModule,
-    Tab4PageRoutingModule
+    Tab4PageRoutingModule,
+    MaterialModule
   ],
   declarations: [Tab4Page]
 })

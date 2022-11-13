@@ -1,112 +1,124 @@
- <!-- <ion-header [translucent]="true">
-  <ion-toolbar color="medium" >
-    <ion-title>
-     Remote Operations Cockpit
-    </ion-title>
-  </ion-toolbar>
-</ion-header>
-
-<ion-content [fullscreen]="true">
-   <ion-list>
-    <ion-item color="dark">
-      <ion-label>Total Vechicles Online &nbsp;&nbsp;
-        <ion-button>1</ion-button>
-      </ion-label>
-    </ion-item>
-    <ion-item color="medium" >
-      <ion-label>Total Vehicles Offline &nbsp;&nbsp;&nbsp;</ion-label>
-    </ion-item>
-    <ion-item color="dark">
-      <ion-label>Service Tickets Open</ion-label>
-    </ion-item >
-    <ion-item color="medium">
-      <ion-label>Avg Maintanence Speed</ion-label>
-    </ion-item>
-    <ion-item color="dark">
-      <ion-label>Avg Maintanence Time</ion-label>
-    </ion-item>
-
-    <ion-item color="medium">
-      <ion-label>Cost per mile</ion-label>
-    </ion-item>
-    <ion-item color="dark">
-      <ion-label>Maintanence Type</ion-label>
-    </ion-item>
-    <ion-item color="medium">
-      <ion-label>Average Battery Span</ion-label>
-    </ion-item>
-    <ion-item color="dark">
-      <ion-label>Avg Availability</ion-label>
-    </ion-item>
-  </ion-list>
-
-
-
-</ion-content> -->
-<!--
-
-<ion-header>
-  <ion-toolbar>
-    <ion-title>NGX Data Table</ion-title>
-  </ion-toolbar>
-</ion-header>
-
-<ion-content>
-  <div class="ion-padding">
-  Theme classes dark, material, bootstrap
-    <ngx-datatable
-      class="material"
-      [limit]="8"
-      [rows]="rows"
-      [rowHeight]="50"
-      [columns]="columns"
-      [columnMode]="'force'"
-      [sortType]="'multi'"
-      [headerHeight]="50"
-      [footerHeight]="50">
-    </ngx-datatable>
-    <ngx-datatable #myTable [rows]="rows" [columns]="columns">
-  </div>
-</ion-content> -->
-
 <ion-header [translucent]="true">
-  <ion-toolbar color="medium" >
-    <ion-title class="main" >
-     Remote Operations Cockpit
+  <ion-toolbar color="dark">
+    <ion-title class="main">
+      <div class="flex-container">
+        <div class="flex-container">
+          <ion-label class="" size="large"
+            ><img [src]="imagePath" style="width: 60px; height: 40px"
+          /></ion-label>
+        </div>
+        <div>
+          <ion-label style="margin-top: 8px" class="right-align" size="large"
+            ><img [src]="landImage" style="width: 60px; height: 40px"
+          /></ion-label>
+        </div>
+      </div>
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
+<!-- <body class="box" >
+<ion-content   color="dark" [fullscreen]="true">
 
-<ion-content   color="medium" [fullscreen]="true">
-  <ion-title class="main" >Service Tickets</ion-title>
-  <ion-grid class="table">
+<div class="box" >
+  <ion-grid class="table" style="background-color: rgb(59, 56, 56);" >
+<div >
+ <div >
+      <h3 style="background-color: rgb(59, 56, 56); text-align: center;">Service Tickets</h3>
+    </div>
 
+
+
+
+
+  <div>
     <ion-row class="heading" >
-      <!-- <ion-col>S.No</ion-col> -->
-      <ion-col>Alert ID</ion-col>
+
+
+      <ion-col  style="max-width:15%  ;  " >Alert ID</ion-col>
       <ion-col>Ticket ID</ion-col>
       <ion-col>Description</ion-col>
     </ion-row>
+  </div>
+  <div>
 
     <ion-row class="light-grey" *ngFor="let ticket of tickets; index as i">
-      <!-- <ion-col>{{ i + 1 }}</ion-col> -->
-      <ion-col >{{ ticket.alertid}}</ion-col>
+
+      <ion-col style="max-width:15% ;"  >{{ ticket.alertid}}</ion-col>
       <ion-col class="ticket" >{{ ticket.ticketid }}</ion-col>
       <ion-col>{{ ticket.description }}</ion-col>
     </ion-row>
-
+  </div>
+</div>
   </ion-grid>
-<!--
-  <div class="chart-container">
-    <canvas  id="MyChart" >{{ chart }}</canvas>
-  </div> -->
 
-  <!-- <ion-item lines="none">
-    <ion-button color="primary" size="small" slot="end" routerLink="/material">
-      Material Design Table
-    </ion-button>
-  </ion-item> -->
+
+</div>
+<table style="height:100%;width:100%; position: absolute; top: 0; bottom: 0; left: 0; right: 0;border:1px solid">
+  <tr style="height: 25%;">
+     <td>Region</td>
+ </tr>
+ <tr style="height: 75%;">
+     <td>100.00%</td>
+ </tr>
+</table>
+</ion-content>
+</body> -->
+<ion-content color="dark">
+  <!-- <body class="box" style="max-height: 100%;">
+    <div style="background-color: rgb(59, 56, 56);" >
+    <div style=" text-align: center; width: 100%;background-color: yellow;color: black;max-height: 40%;">
+      <h3  style="text-align:centre ;" >Service Tickets</h3>
+    </div>
+    <div class="box" style="max-height: 100%;">
+    <div class="parent box" style="max-height: 100%;">
+      <p  >Alert ID</p>
+      <p>Ticket ID</p>
+      <p>Status</p>
+      </div> -->
+      <!-- <tr class="parent">
+        <td>Alert ID</td>
+        <td>Ticket ID</td>
+        <td>Status</td>
+      </tr> -->
+      <!-- <div class="box">
+      <tr  *ngFor="let ticket of tickets; index as i" class="parent">
+        <td  >{{ ticket.alertid}}</td>
+        <td >{{ ticket.ticketid }}</td>
+        <td  >{{ ticket.status }}</td>
+      </tr>
+    </div>
+  </div> -->
+      <!-- <ion-row class="light-grey" *ngFor="let ticket of tickets; index as i">
+
+        <ion-col style="max-width:15% ;"  >{{ ticket.alertid}}</ion-col>
+        <ion-col class="ticket" >{{ ticket.ticketid }}</ion-col>
+        <ion-col>{{ ticket.description }}</ion-col>
+      </ion-row> -->
+      <!-- <div *ngFor="let ticket of tickets; index as i" class="parent">
+        <p>{{ ticket.alertid}}</p>
+        <p>{{ ticket.ticketid }}</p>
+        <p>{{ ticket.description }}</p>
+
+      </div> -->
+    <!-- </div>
+
+
+  </body> -->
+  <p class="heading table" style="margin-bottom: 0;" >Service Tickets</p>
+  <table  class="table" style="width: 100%; height: 90%;">
+    
+    <tr>
+      <td>Alert ID</td>
+      <td>Ticket ID</td>
+      <td>Status</td>
+    </tr>
+    <tr  *ngFor="let ticket of tickets">
+      <td  >{{ ticket.alertid}}</td>
+        <td  style="color:yellow ;">{{ ticket.ticketid }}</td>
+        <td  >{{ ticket.status }}</td>
+    </tr>
+  </table>
 
 
 </ion-content>
